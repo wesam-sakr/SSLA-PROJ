@@ -1,0 +1,150 @@
+body{
+    direction: ltr;
+}
+
+/* .form-check {
+    padding-right: 1.5em;
+    padding-left: 0;
+} */
+
+.accordion-button::after {
+    margin-right: unset;
+    margin-left: auto;
+}
+.breadcrumb .content span{
+    transform: rotatex(180deg);
+}
+
+#scrollUp,
+.navbar .dropdown .icon-arrow ,
+header .header-content .social ,
+header .header-content .owl-carousel .owl-dots ,
+.staff .card::after,
+.testimonial .description::before
+{
+    left: unset;
+}
+
+.article .article-wrapper .article-wrapper-img .badge,
+.testimonial .description::after,
+.principle .principle-wraper li:before{
+    right: unset;
+}
+#scrollUp {
+    right: 15px;
+}
+.navbar .dropdown .icon-arrow {
+    right: -10px;
+}
+header .header-content .social {
+    right: 6px;
+}
+header .header-content .owl-carousel .owl-dots {
+    right: 0;
+}
+.about .about-shape{
+    left: 0;
+    transform: translate(-50% , -50%);
+}
+.about ol li {
+    padding-left: 45px;
+    padding-right: unset;
+}
+.about .about-img img,
+.video-container video {
+    border-radius: 0px 0px 0px 200px;
+}
+.video-container .play-icon, .video-container .pause-icon {
+    left: 0;
+    transform: rotate(180deg) translate(50%, 50%);
+}
+.partOfServs .serv {
+    border-right: 1px #5989C750 dashed;
+    border-left: unset;
+}
+.partOfServs .row div:nth-child(3n) .serv {
+    border-right: unset;
+}
+.article .article-wrapper .article-wrapper-img .badge {
+    left: 10px;
+}
+.staff .card::after {
+    right: 0;
+    border-radius: 15px 0px;
+}
+.statistics .triangle-bottomright {
+    transform: rotate(90deg);
+}
+.testimonial .description::before {
+    transform: rotatey(180deg);
+    right: 10px;
+}
+.testimonial .description::after{
+    transform: rotatey(180deg);
+    left: 10px;   
+}
+.more .bi-arrow-left-short{
+    transform: rotate(180deg);
+}
+.about ol li::after{
+    left: 22px;
+    right: unset;
+}
+.why-us li .about-shape+h5 {
+    padding-right: unset;
+    padding-left: 1rem;
+}
+.article .article-wrapper .date img,.single-article .article-header img {
+    margin-right: unset;
+    margin-right: 5px;
+}
+.services .servHeadline {
+    padding-left: 1.45rem;
+    padding-right: unset;
+}
+.services .servHeadline::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 100%;
+    background: #066868;
+    border-radius: 0 5px 5px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.services-data {
+    padding-left: 1.5rem;
+    padding-right: unset;
+}
+.services .services-data ol {
+    padding-left: unset;
+    padding-right: 2rem;
+}
+.op-pro-filter:after {
+    right: 15px;
+    left: auto;
+}
+.principle .principle-wraper li:before{
+    left: .5rem;
+}
+.advice .form-check .form-check-input {
+    float: left;
+}
+
+@media (max-width: 576px){
+    .about-data {
+        padding: 2rem 0 2rem 1.5rem;
+    }
+}
+@media (max-width: 767.8px){
+    .partOfServs .serv {
+        border-right: none;
+    }
+}
+@media (max-width: 992px){
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: 100px;
+    }
+}

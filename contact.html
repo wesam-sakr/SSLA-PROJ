@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SSLA</title>
+   <link rel="icon" href="images/logo.svg">
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- Bootstrap link  -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+   <!-- fancyBox link  -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+   <!-- owl-carousel link -->
+   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+   <!-- rateyo link -->
+  <link rel="stylesheet" href="css/jquery.rateyo.min.css">
+
+  <!-- nice select link -->
+  <link rel="stylesheet" href="css/nice-select.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/style-En.css" title="ltr"> -->
+
+</head>
+
+<body>  
+  
+<!-- -------- loading ----------- -->
+<div id="loading">
+  <div class="loader">
+    <img src="images/loader/loader.svg" alt="" />
+  </div>
+</div>
+<a aria-label="developer portfolio" href="https://wesam-sakr.github.io/Portfolio/" accesskey="w" target="_blank"></a>
+
+<!------------- nav section -------------->
+<nav class="navbar navbar-expand-lg navbar-light top-0">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand m-0" href="index.html"><img class="ms-2" src="images/logo.svg" width="30px" alt="">
+    </a>
+    <div class="collapse navbar-collapse justify-content-between align-items-center" id="navbarSupportedContent">
+      <ul class="navbar-nav  mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">الخدمات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="articles.html">المقالات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">البوم الصور</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="staff.html">فريق العمل</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link"  data-toggle="dropdown">المزيد
+            <i class="bi bi-caret-down-fill icon-arrow"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="principles.html">القيم والمبادئ</a></li>
+            <li><a href="advice.html">طلب استشارة</a></li>
+            <li><a href="common-que.html">الأسئلة الشائعة</a></li>
+            <li><a href="contact.html">تواصل معنا</a></li>
+          </ul>
+        </li>
+      </ul> 
+      <ul class="m-0 d-flex align-items-center">
+        <li class="nav-item">
+          <a href=" " id="lang">
+            EN
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!------------- breadcrumb section ------------->
+<div class="breadcrumb" style="background-image:url(images/dotted.png);">
+  <div class="container h-100">
+      <div class="content h-100">
+          <a href="index.html" class="text-muted">الصفحة الرئيسية</a>
+          <div class="px-2 d-flex">
+              <span>/</span>
+          </div>
+          <h6 class="text-white">تواصل معنا</h6>
+      </div>
+  </div>
+</div>
+
+<!-------------- cars section -------------->
+<section class="mt-5">
+    <div class="contact-data py-5">
+        <div class="container">
+            <div class="row text-center g-0 justify-content-center">
+                <!-- الموقع -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"  data-aos="fade-right"  data-aos-easing="linear" data-aos-duration="100">
+                    <div class="contact-info">
+                        <a href="http://">
+                            <i class="bi bi-geo-alt"></i>
+                            <h5 class="my-2">الموقع</h5>
+                            <p class="text-muted">
+                              المملكة العربية السعودية - جدة طريق االمدينة الطالع تقاطع شارع حراء مركز درة حراء
+                            </p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- رقم الجوال -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"  data-aos="fade-up"  data-aos-easing="linear" data-aos-duration="300">
+                    <div class="contact-info">
+                      <i class="bi bi-telephone"></i>
+                      <h5 class="my-2">الهاتف</h5>
+                      <div class="phone-numbers">
+                        <a href="tel:0502546321" class="text-muted">0502546321</a>
+                        <a href="tel:0502546321" class="text-muted">0502546321</a>
+                        <a href="tel:0502546321" class="text-muted">0502546321</a>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- البريد الإلكتروني -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4"  data-aos="fade-left"  data-aos-easing="linear" data-aos-duration="200">
+                  <div class="contact-info">
+                      <a href="mailto:">
+                          <i class="bi bi-envelope"></i>
+                          <h5 class="my-2">البريد الإلكتروني</h5>
+                          <p class="text-muted">Username@mail.com</p>
+                      </a>
+                  </div>
+              </div>
+            </div>
+
+            <!-------------- contact form section -------------->
+            <section class="contactUs">
+              <div class="container">
+                <div class="contact-form">
+                  <h5 class="section-heading">تواصل معنا</h5>
+                  <p class="text-center">نرد خلال 24 ساعة خلال الأسبوع</p>
+                  <form action="" id="formID">
+                    <div class="row gy-3 mt-3">
+                      <div class="col-6">
+                        <input type="text" class="form-control" placeholder="الإسم الأول" required="" name="first-name">
+                      </div>
+                      <div class="col-6">
+                        <input type="text" class="form-control" placeholder="الإسم الثاني" required="" name="last-name">
+                      </div>
+                      <div class="col-6">
+                        <input type="text" class="form-control" placeholder="رقم الجوال" required="" name="phone">
+                      </div>
+                      <div class="col-6">
+                        <input type="email" class="form-control" placeholder="البريد الالكتروني" required="" name="emil">
+                      </div>
+                      <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="اكتب رسالتك هنا" required="" name="message"></textarea>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn custom-btn d-block m-auto mt-5">ارسال</button>
+                  </form>
+                  <div class="response"></div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0717709408755!2d48.47961528494304!3d27.467024882892087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3e5c7b5c02fa1255!2zMjfCsDI4JzAxLjMiTiA0OMKwMjgnMzguNyJF!5e0!3m2!1sar!2seg!4v1656230264783!5m2!1sar!2seg" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </div>
+</section>
+
+<!------------- footer section -------------->
+<footer>
+  <div class="footer-nav">
+    <img class="imgTop" src="images/circ-logo-2.png">
+    <div class="container">
+      <div class="navbar navbar-expand-lg">
+        <div class="container align-items-center">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">خدماتنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="articles.html">المقالات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="staff.html">فريق العمل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">تواصل معنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">ألبوم الصور</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="policy.html">سياسة الخصوصية</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social">
+        <div>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" accesskey="f"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+        <div>
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="sub-footer">
+      <a href="https://smartvision4p.com" class="link"></a>
+      <p>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</p>
+      <img src="images/smart-logo.svg" alt="">
+    </div>
+  </div>
+</footer>
+
+<!------------- go to up -------------->
+<div class="scrollUp" id="scrollUp">
+  <a href="#">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+</div>
+
+<!-- jQuery script -->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!-- owl-carousel script -->
+<script src="js/owl.carousel.min.js"></script>
+
+<!-- bootstrap script -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- fancyBox script -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<!-- rateyo script -->
+<script src="js/jquery.rateyo.min.js"></script>
+
+<!-- nice select script -->
+<script src="js/jquery.nice-select.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
+</html>
