@@ -1,6 +1,5 @@
 // dir
 var bodyDir = $('body').css('direction')
-console.log(bodyDir)
 var dirAr
 if(bodyDir == "rtl"){
   dirAr= true
@@ -59,7 +58,6 @@ $(document).ready(function(){
     // Listen to owl events:
     owl.on('changed.owl.carousel', function(event) {
         var n = Math.ceil($('.partners .owl-item.active').length/2) ;
-        console.log(n);
         $('.partners .owl-item.active').each(function (){
             if(this.hasClass('partner')) {
                 this.classList.remove('partner');
@@ -70,11 +68,8 @@ $(document).ready(function(){
         $(aAitem).toggleClass("partner")
     })
     $('.article .owl-carousel').owlCarousel({
-        // loop:true,
         margin:20,
-        // responsiveClass:true,
         rtl:dirAr,
-        // autoplay:true,
         nav :true,
         dots: false,
         responsive:{
@@ -104,7 +99,6 @@ $(document).ready(function(){
     $('.staff .owl-carousel').owlCarousel({
         loop:true,
         margin:20,
-        // responsiveClass:true,
         rtl:dirAr,
         autoplay:true,
         nav:false,
