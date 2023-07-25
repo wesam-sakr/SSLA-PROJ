@@ -41,10 +41,54 @@ dropdownArray.forEach(function(el){
     }
 	};
 })
+
+// nav dropdown menu
+// var dropdown = document.querySelectorAll('.dropdown');
+// var dropdownArray = Array.prototype.slice.call(dropdown,0);
+// dropdownArray.forEach(function(el){
+//     var button = el.querySelector('a[data-toggle="dropdown"]'),
+//     menu = el.querySelector('.dropdown-menu'),
+//     arrow = button.querySelector('i.icon-arrow');
+//     button.onclick = function(event) {
+//     $('.dropdown-menu').each( function(){
+//         var link =  $(this).prev()[0];
+//         var chevron = $(link).find('i')[0];
+//         if(this.hasClass('show')) {
+//             this.classList.remove('show');
+//             this.classList.add('hide');
+//             $(chevron).classList.remove('open');
+//         } else {
+//             // this.classList.remove('hide');
+//             // this.classList.add('show');
+//             // $(chevron).classList.add('open');
+//         }
+//     })
+
+//     if(!this.hasClass('show')) {
+//         menu.classList.add('show');
+//         menu.classList.remove('hide');
+//         arrow.classList.add('open');
+//         arrow.classList.remove('close');
+//         event.preventDefault();
+//     }
+//     else {
+//         menu.classList.remove('show');
+//         menu.classList.add('hide');
+//         arrow.classList.remove('open');
+//         arrow.classList.add('close');
+//         event.preventDefault();
+//     }
+// 	};
+// })
+
+
 Element.prototype.hasClass = function(className) {
     return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
 };
 
+$('.navbar-toggler').click(function(){
+    this.toggleClass('closed');
+})
 
 $(".play-icon").click(function(){
     document.querySelector(".vid-wrapper video").play();
@@ -120,10 +164,11 @@ $(document).ready(function(){
         dots: false,
         responsive:{
             0:{
-                items:2,
+                items:3,
+                margin: 8,
             },
             600:{
-                items:4,
+                items:5,
             },
             1000:{
                 items:5,
