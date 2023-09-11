@@ -67,6 +67,12 @@ $(".pause-icon").click(function(){
     $('.video-cover-img').slideDown( "slow" )
 })
 
+var clients = $('.happy_clients_imgs').children()
+$(clients).each(function(ind){
+    $(this).css({
+        '--zindex' : `${ind}`,
+    })
+})
 
 // owl carousel
 $(document).ready(function(){
@@ -86,6 +92,7 @@ $(document).ready(function(){
         margin:10,
         rtl:dirAr,
         dots: false,
+        nav: true,
         responsive:{
             0:{
                 items:1,
