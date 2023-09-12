@@ -14,7 +14,7 @@
             crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <!-- Bootstrap link  -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
         <link rel="stylesheet" href="css/bootstrap-icons.min.css">
 
         <!-- fancyBox link  -->
@@ -52,11 +52,12 @@
                     align-items-center" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page"
+                            <a class="nav-link" aria-current="page"
                                 href="index.html">الرئيسية</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown">من نحن
+                            <a class="nav-link" data-toggle="dropdown">
+                                من نحن
                                 <i class="bi bi-chevron-down icon-arrow"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -65,11 +66,12 @@
                                 <li><a href="founders.html">أعضاء اللجنة
                                         التأسيسية</a></li>
                                 <li><a href="honors.html">أعضاء الشرف</a></li>
+                                <li><a href="">البحث عن عضوية مشترك</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown">عمارة
-                                البيئة
+                            <a class="nav-link" data-toggle="dropdown">
+                                عمارة البيئة
                                 <i class="bi bi-chevron-down icon-arrow"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -80,16 +82,41 @@
                                 <li><a href="guide.html"> دليل المكاتب والشركات</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="activities.html">البرامج
-                                والأنشطة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="membership.html">عضوية
-                                الجمعية</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-toggle="dropdown">
+                                البرامج والأنشطة
+                                <i class="bi bi-chevron-down icon-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="activitiy-details.html">الجوائز</a></li>
+                                <li><a href="activitiy-details.html"> اللقاءات
+                                        العلمية</a></li>
+                                <li><a href="activitiy-details.html">الندوات
+                                        والمؤتمرات</a></li>
+                                <li><a href="activitiy-details.html">الدورات
+                                        وورش العمل</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" data-toggle="dropdown">المركز
+                            <a class="nav-link" data-toggle="dropdown">
+                                عضوية الجمعية
+                                <i class="bi bi-chevron-down icon-arrow"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="membership-details.html">العضوية
+                                        المهنية</a></li>
+                                <li><a href="membership-details.html"> العضوية
+                                        الأكاديمية</a></li>
+                                <li><a href="membership-details.html">العضوية
+                                        الشرفية</a></li>
+                                <li><a href="membership-details.html">عضوية
+                                        الطالب</a></li>
+                                <li><a href="membership-details.html">عضوية
+                                        المنتسب</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active" data-toggle="dropdown">المركز
                                 الإعلامي
                                 <i class="bi bi-chevron-down icon-arrow"></i>
                             </a>
@@ -137,9 +164,9 @@
                 <div class="container content h-100">
                     <a href="index.html">الصفحة الرئيسية</a>
                     <span><i class="bi bi-chevron-double-left"></i></span>
-                    <a href="articles.html">المقالات</a>
+                    <a href="news.html">الأخبار</a>
                     <span><i class="bi bi-chevron-double-left"></i></span>
-                    <h6 class="text-white">اسم المقال</h6>
+                    <h6 class="text-white">اسم الخبر</h6>
                 </div>
             </div>
         </div>
@@ -148,19 +175,12 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-8">
-                        <h5>اسم المقال</h5>
+                        <h5>اسم الخبر</h5>
                         <div class="article-img">
                             <img class="w-100 h-100" src="images/atricle.png"
                                 alt="">
                         </div>
                         <div class="article-details">
-                            <ul class="options">
-                                <li><i class="bi bi-calendar-date-fill"></i> 15
-                                    مايو 2022</li>
-                                <li><i class="bi bi-chat-fill"></i> 3 تعليقات</li>
-                                <li><i class="bi bi-eye-fill"></i> 5 مرات
-                                    المشاهدة</li>
-                            </ul>
                             <h5>المقدمة</h5>
                             <p>
                                 ومن هنا وجب على المصمم أن يضع نصوصا مؤقتة على
@@ -233,14 +253,11 @@
                                                 class="w-100" alt="">
                                         </div>
                                         <h5 class="pt-3">
-                                            اسم المقال يكتب هنا
+                                            اسم الخبر يكتب هنا
                                         </h5>
-                                        <span class="text-muted">
-                                            بواسطة الأدمن
-                                        </span>
                                         <a href="news-details.html"
-                                            class="link-more">
-                                            <span>قراءة المقال</span>
+                                            class="more mt-3">
+                                            <span>قراءة الخبر</span>
                                             <div class="">
                                                 <i class="bi bi-arrow-left"></i>
                                             </div>
@@ -254,14 +271,11 @@
                                                 class="w-100" alt="">
                                         </div>
                                         <h5 class="pt-3">
-                                            اسم المقال يكتب هنا
+                                            اسم الخبر يكتب هنا
                                         </h5>
-                                        <span class="text-muted">
-                                            بواسطة الأدمن
-                                        </span>
                                         <a href="news-details.html"
-                                            class="link-more">
-                                            <span>قراءة المقال</span>
+                                            class="more mt-3">
+                                            <span>قراءة الخبر</span>
                                             <div class="">
                                                 <i class="bi bi-arrow-left"></i>
                                             </div>
@@ -347,7 +361,7 @@
                 <div class="logo">
                     <img src="images/logo.svg" alt="">
                 </div>
-                <div class="links row gx-5 justify-content-center">
+                <div class="links row gx-5 justify-content-between px-lg-5">
                     <div class="col-12 col-md-auto">
                         <h5>خريطة الموقع</h5>
                         <ul>
