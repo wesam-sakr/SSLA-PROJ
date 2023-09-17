@@ -2397,6 +2397,12 @@ font-weight: bold;
 }
 
 /* ======================= advice page ======================= */
+.programms .card{
+  background: #FAFAFA 0% 0% no-repeat padding-box;
+  border-radius: 72px;
+  border: none;
+  overflow: hidden;
+}
 
 
 /* ======================= policy page ======================= */
