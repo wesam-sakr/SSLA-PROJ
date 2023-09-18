@@ -95,15 +95,46 @@ function navHighlighter(){
   - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
   */
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".article_topics a[href*=" + sectionId + "]")
-        .classList.add("active");
+      document.querySelector(".article_topics a[href*=" + sectionId + "]").classList.add("active");
     } else {
-      document
-        .querySelector(".article_topics a[href*=" + sectionId + "]")
-        .classList.remove("active");
+      document.querySelector(".article_topics a[href*=" + sectionId + "]").classList.remove("active");
     }
   });
+}
+
+const inputElements = [...document.querySelectorAll('input.code')]
+
+inputElements.forEach((ele,index)=>{
+  ele.addEventListener('keydown',(e)=>{
+    // if the keycode is backspace & the current field is empty
+    // focus the input before the current. Then the event happens
+    // which will clear the "before" input box.
+    if(e.keyCode === 8 && e.target.value==='') inputElements[Math.max(0,index-1)].focus()
+  })
+  ele.addEventListener('input',(e)=>{
+      inputElements[index].focus()
+    // take the first character of the input
+    // this actually breaks if you input an emoji like ðŸ‘¨â€ðŸ‘©â€ðŸ‘§â€ðŸ‘¦....
+    // but I'm willing to overlook insane security code practices.
+    const [first,...rest] = e.target.value
+    e.target.value = first ?? '' // first will be undefined when backspace was entered, so set the input to ""
+    const lastInputBox = index===inputElements.length-1
+    const didInsertContent = first!==undefined
+    if(didInsertContent && !lastInputBox) {
+      // continue to input the rest of the string
+      inputElements[index+1].focus()
+      inputElements[index+1].value = rest.join('')
+      inputElements[index+1].dispatchEvent(new Event('input'))
+    }
+  })
+})
+
+
+// mini example on how to pull the data on submit of the form
+function onSubmit(e){
+  e.preventDefault()
+  const code = inputElements.map(({value})=>value).join('')
+  console.log(code)
 }
 
 // owl carousel

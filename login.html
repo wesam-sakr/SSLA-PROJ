@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLA</title>
+    <link rel="icon" href="images/logo.svg">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css"/>
+
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.ltr.css" title="ltr"> -->
+
+  </head>
+
+<body>
+
+    <!------------- sign in -------------->
+    <section class="sign">
+        <div class="bg-sign  wow animate__fadeInRight animate__slower">
+            <div class="overlay">
+                <div class="sign-text">
+                    <img src="images/slogan.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="sign-form wow animate__fadeInLeft animate__slower">
+            <div class="container">
+                <!-- sign -->
+                <form action="" id="login">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link active">
+                                تسجيل الدخول
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="register.html" class="nav-link">
+                                إنشاء حساب
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row mt-5 px-5 gy-1 row-cols-1 ">
+                        <div class="col-12">
+                            <label>اسم المستخدم</label>
+                            <input type="text" class="form-control" placeholder="اسم المستخدم يكتب هنا" required>
+                        </div>
+                        <div class="col-12">
+                            <label>كلمة المرور</label>
+                            <input type="password" class="form-control" placeholder="*****************" required>
+                        </div>
+                        <div class="col-12">
+                            <a role="button" id="forgotPassBtn" style="font-size:14px ;"> نسيت كلمة المرور ؟</a>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html" class="custom-btn d-block w-100">
+                                <span class="text">
+                                    دخول
+                                    <i class="bi bi-arrow-left"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="text-center pt-3" style="font-size:14px ;"> ليس لديك حساب ؟
+                        <a href="register.html" style="color: var(--main-color) ;">
+                            <b>انشاء حساب</b>
+                        </a>
+                    </p>
+                </form>
+
+                <!-- forgot pass -->
+
+                <!-- your current email -->
+                <form action="" id="currentEmail" class="d-none py-5">
+                    <h5 class="text-center mb-5">نسيت كلمة المرور</h5>
+                    <div class="row gy-3 px-lg-5 justify-content-center">
+                        <div class="col-12">
+                            <label> البريد الالكترونى او رقم الهاتف</label>
+                            <input type="email" class="form-control" placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" id="sendCurrentEmail" class="custom-btn d-block w-100">
+                                <span class="text">
+                                    ارسال
+                                    <i class="bi bi-arrow-left"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- verification code -->
+                <div id="verifyCode" class="d-none">
+                    <h5 class="text-center my-3">نسيت كلمة المرور</h5>
+                    <div id="wrapper">
+                        <div id="dialog">
+                            <span>أدخل رمز التحقق</span>
+                            <div id="form">
+                                <div class="verify">
+                                    <input class="code" type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                    <input class="code" type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                    <input class="code" type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                    <input class="code" type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+                                </div>
+                                <button id="sendVerifyCode" class="custom-btn d-block w-100">
+                                    <span class="text">
+                                        ارسال
+                                        <i class="bi bi-arrow-left"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- reset pass -->
+                <form action="" id="resetPass" class="form-login d-none py-5">
+                    <h5 class="text-center mb-5">نسيت كلمة المرور</h5>
+                    <div class="row justify-content-center gy-3 text-end">
+                        <div class="col-11 ">
+                            <label for="">كلمة المرور</label>
+                            <input class="form-control" type="password">
+                        </div>
+                        <div class="col-11 ">
+                            <label for=""> تأكيد كلمة المرور</label>
+                            <input class="form-control" type="password">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="sendNewPass" class="profile-btn"
+                            style="margin:20px 0px !important;">ارسال</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <a href="index.html" class="back-home position-absolute">
+        <i class="fa-solid fa-arrow-left-long"></i>
+    </a>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- fancyBox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- rateyo script -->
+    <!-- <script src="js/jquery.rateyo.min.js"></script> -->
+
+    <!-- nice select script -->
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+
+    <script>
+        // ----------- sign in & up ---------
+
+
+        let login = document.getElementById("login")
+        let forgotPassBtn = document.getElementById("forgotPassBtn")
+
+        let currentEmail = document.getElementById("currentEmail")
+        let sendCurrentEmail = document.getElementById('sendCurrentEmail')
+
+        let verifyCode = document.getElementById('verifyCode')
+        let sendVerifyCode = document.getElementById('sendVerifyCode')
+
+        let resetPass = document.getElementById('resetPass')
+        let sendNewPass = document.getElementById('sendNewPass')
+
+        forgotPassBtn.addEventListener("click", function (e) {
+            login.classList.add('d-none');
+            currentEmail.classList.remove('d-none');
+        })
+
+        sendCurrentEmail.addEventListener("click", function (e) {
+            currentEmail.classList.add('d-none');
+            verifyCode.classList.remove('d-none');
+        })
+
+        sendVerifyCode.addEventListener("click", function (e) {
+            verifyCode.classList.add('d-none');
+            resetPass.classList.remove('d-none');
+        })
+
+        sendNewPass.addEventListener("click", function (e) {
+            resetPass.classList.add('d-none');
+            login.classList.remove('d-none');
+        })
+
+    </script>
+
+</body>
+
+</html>
