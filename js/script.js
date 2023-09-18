@@ -74,6 +74,12 @@ $(clients).each(function(ind){
     })
 })
 
+// toggle nav
+$('.toggle-nav-btn').click(function(){
+    $('.profile-nav').toggleClass('open');
+})
+
+
 // Get all sections that have an ID defined
 const sections = document.querySelectorAll(".single-article [id]");
 
@@ -89,15 +95,16 @@ function navHighlighter(){
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 230;
     sectionId = current.getAttribute("id");
+    var section = $(".sticky_nav a[href*=" + sectionId + "]")
 
     /*
   - If our current scroll position enters the space where current section on screen is, add .active class to corresponding navigation link, else remove it
   - To know which link needs an active class, we use sectionId variable we are getting while looping through sections as an selector
   */
     if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document.querySelector(".article_topics a[href*=" + sectionId + "]").classList.add("active");
+      section.addClass("active");
     } else {
-      document.querySelector(".article_topics a[href*=" + sectionId + "]").classList.remove("active");
+      section.removeClass("active");
     }
   });
 }
@@ -137,6 +144,27 @@ function onSubmit(e){
   console.log(code)
 }
 
+/* -------------- upload profile pic ---------------- */
+if($('.profile-pic').length > 0){
+    const imgDiv = document.querySelector('.profile-pic');
+    const img = document.querySelector('#photo');
+    const file = document.querySelector('#file');
+    const uploadBtn = document.querySelector('#uploadBtn');
+    
+    //when we choose a pic to upload
+    
+    file.addEventListener('change', function(){
+      const choosedFile = this.files[0];
+      if (choosedFile) {
+        const reader = new FileReader(); 
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+        reader.readAsDataURL(choosedFile);
+      }
+    });
+
+}
 // owl carousel
 $(document).ready(function(){
     $("header .owl-carousel").owlCarousel({
