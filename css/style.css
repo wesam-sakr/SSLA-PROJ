@@ -976,6 +976,7 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
   color: #7f7f7f;
   font-size: 18px;
   border: none;
+  width: max-content;
 }
 .staff .nav-tabs .nav-link i {
   display: none;
@@ -2014,7 +2015,9 @@ footer .footer-content li a {
   background: #FAFAFA;
   border-radius: 72px;
   line-height: 2;
+  margin-bottom: 2rem;
 }
+
 .programms .card .card-header {
   position: absolute;
   top: 0;
@@ -2205,7 +2208,6 @@ font-weight: bold;
   border-right: 8px solid var(--main-color);
 }
 .all-comment{
-  width: 77%;
   margin-top: 2.5rem;
 }
 .singlearticles .card {
@@ -2727,15 +2729,6 @@ font-weight: bold;
   border-bottom: 1px dashed var(--main-color);
 }
 
-/* ======================= advice page ======================= */
-.programms .card{
-  background: #FAFAFA 0% 0% no-repeat padding-box;
-  border-radius: 72px;
-  border: none;
-  overflow: hidden;
-}
-
-
 /* ======================= policy page ======================= */
 .policy {
   margin-bottom: 30px;
@@ -2834,6 +2827,9 @@ font-weight: bold;
   .join-wrapper{
     display: block;
     grid-template-columns: unset;
+  }
+  .single-activity .ssla-form{
+    padding: 2rem;
   }
 }
 @media (min-width: 992px) {
@@ -2971,28 +2967,7 @@ font-weight: bold;
   .blogs .card ul li {
     font-size: 10px;
   }
-  /* .article .owl-nav button.owl-prev {
-    right: 0%;
-    transform: translate(-50%, 0%);
-  }
-  .article .owl-nav button.owl-next {
-    left: 0%;
-    transform: translate(50%, 0%);
-  } */
-  /* .services-nav {
-    background-color: transparent;
-    border-radius: 0;
-    padding: 1rem;
-    padding-top: 0;
-  }
-  .services-nav .nav {
-    flex-wrap: nowrap;
-    max-height: 213px;
-    overflow-y: auto;
-  }
-  .services-nav .serv-pic {
-    display: none !important;
-  } */
+
 
   .about-data {
     padding: 0rem 0.5rem 1rem 0;
@@ -3067,24 +3042,41 @@ font-weight: bold;
 } */
 
 
-
-
-
-
+.project_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
 .projects .gallery-wrapper {
   display: grid;
   grid-template-columns:  1fr 1fr 1fr ;
   grid-template-areas:
-      'item1 item1 item2'
-      'item1 item1 item3'
-      'item4 item5 item6';
+    'item1 item1 item2'
+    'item1 item1 item3'
+    'item4 item5 item6';
   gap: 22px;
   padding: 10px;
 }
 .projects .gallery-wrapper:nth-child(6){
   grid-area: item6;
 }
+.search .form-control {
+  padding: 0.75rem 2.4rem;
+  min-width: 200px;
+  max-width: 300px;
+  background: #F1F1F1 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  border: none;
+}
 
+.search .fa-solid {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 19px;
+  color: #AFAFAF;
+  right: 15px;
+}
 
 
 
@@ -3334,4 +3326,91 @@ font-weight: bold;
   .profile-nav .nav{
     margin-top: 0px;
   }
+  .gallery-wrapper, .projects .gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-areas: 
+    'item1 item2'
+    'item3 item4'
+    'item5 item6';
+    gap: 22px;
+    padding: 10px;
+  }
+  .sign-form {
+    width: 90% !important;
+    left: 5% !important;
+    transform: translateX(0px) !important;
+  }
+  .bg-sign {
+    display: none;
+  }
+  .gallery-wrapper .item {
+    height: 200px !important;
+  }
+}
+
+@media(max-width: 786px){
+  .wrapper{
+    display: block !important;
+  }
+  .article_topics {
+    background: #FAFAFA;
+    border-radius: 10px;
+    padding: 2rem 3rem;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .single-activity .sidebar{
+    position: relative;
+    top: 0;
+  }
+  .single-activity .applay{
+    flex-direction: column;
+  }
+
+  .membership_topics{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+  }
+  .membership_topics ul {
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    /* justify-content: start; */
+    align-items: flex-start;
+    font-size: small;
+    margin: 0;
+  }
+  .membership_topics ul li a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--white);
+    font-weight: 500;
+  }
+  .project_header{
+    flex-wrap: wrap;
+  }
+}
+@media (max-width:578px){
+  .single-article .options li {
+    font-size: smaller;
+  }
+  .gallery-wrapper, .projects .gallery-wrapper {
+    display: block;
+    grid-template-columns: unset ;
+    grid-template-areas: unset;
+    gap: 22px;
+    padding: 10px;
+  }
+  .gallery-wrapper .item {
+    height: 230px !important;
+    margin-bottom: .5rem;
+  }
+  .single-activity .ssla-form{
+    padding: 2rem 1rem;
+  }
+  
 }
