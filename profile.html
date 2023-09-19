@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSLA</title>
+    <link rel="icon" href="images/logo.svg">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap link  -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+
+    <!-- fancyBox link  -->
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+
+    <!-- owl-carousel link -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style-En.css" title="ltr"> -->
+
+</head>
+
+<body>
+
+    <!-- -------- loading ----------- -->
+    <div id="loading">
+        <div class="loader">
+            <img src="images/logo.svg" alt="" />
+        </div>
+    </div>
+    <a aria-label="developer portfolio" href="https://wesam-sakr.github.io/Portfolio/" accesskey="w"
+        target="_blank"></a>
+
+
+    <!------------- nav section -------------->
+    <nav class="navbar navbar-expand-lg navbar-light top-0">
+        <div class="container">
+            <a class="navbar-brand m-0" href="index.html"><img class="ms-2" src="images/logo.svg" width="30px" alt="">
+            </a>
+            <div class="collapse navbar-collapse justify-content-between
+          align-items-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">
+                            من نحن
+                            <i class="bi bi-chevron-down icon-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html"> نبذة عنا</a></li>
+                            <li><a href="directors.html"> أعضاء مجلس الإدارة</a></li>
+                            <li><a href="founders.html">أعضاء اللجنة التأسيسية</a></li>
+                            <li><a href="honors.html">أعضاء الشرف</a></li>
+                            <li><a href="">البحث عن عضوية مشترك</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">
+                            عمارة البيئة
+                            <i class="bi bi-chevron-down icon-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="env-arch.html"> نبذة تعريفية</a></li>
+                            <li><a href="projects.html"> المشاريع</a></li>
+                            <li><a href="scientific-prog.html">البرامج العلمية</a></li>
+                            <li><a href="guide.html"> دليل المكاتب والشركات</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">
+                            البرامج والأنشطة
+                            <i class="bi bi-chevron-down icon-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activitiy-details.html">الجوائز</a></li>
+                            <li><a href="activitiy-details.html"> اللقاءات العلمية</a></li>
+                            <li><a href="activitiy-details.html">الندوات والمؤتمرات</a></li>
+                            <li><a href="activitiy-details.html">الدورات وورش العمل</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">
+                            عضوية الجمعية
+                            <i class="bi bi-chevron-down icon-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="membership-details.html">العضوية المهنية</a></li>
+                            <li><a href="membership-details.html"> العضوية الأكاديمية</a></li>
+                            <li><a href="membership-details.html">العضوية الشرفية</a></li>
+                            <li><a href="membership-details.html">عضوية الطالب</a></li>
+                            <li><a href="membership-details.html">عضوية المنتسب</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" data-toggle="dropdown">المركز الإعلامي
+                            <i class="bi bi-chevron-down icon-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="news.html">الأخبار</a></li>
+                            <li><a href="articles.html">المقالات</a></li>
+                            <li><a href="gallery.html">الصور</a></li>
+                            <li><a href="videos.html">الفيديوهات</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <ul class="m-0 d-flex align-items-center" style="gap:10px">
+                <li class="nav-item">
+                    <a href=" " id="lang">
+                        EN
+                        <i class="bi bi-translate"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="custom-btn" href="">
+                        <span class="text">
+                            انضم الينا
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!------------- breadcrumb section ------------->
+    <div class="breadcrumb" style="background-image:url('images/about.png');">
+        <div class="breaddata-wrapper h-100">
+            <div class="container content h-100">
+                <a href="index.html">الصفحة الرئيسية</a>
+                <span><i class="bi bi-chevron-double-left"></i></span>
+                <h6 class="text-white">الملف الشخصي</h6>
+            </div>
+        </div>
+    </div>
+
+    <!------------- profile -------------->
+    <section class="profile mt-0">
+        <div class="container">
+            <div class="wrapper">
+                <div class="sidebar">
+                    <div class="profile-nav">
+                        <button class="toggle-nav-btn mb-3">
+                            <i class="fa-solid fa-x"></i>
+                        </button>
+                        <!-- profile-picture -->
+                        <div class="profile-pic">
+                            <img class="w-100 h-100" src="images/wesam.jpg" alt="" id="photo">
+                            <input type="file" id="file" accept="images/*">
+                            <label for="file" id="uploadBtn">
+                                <div class="profile-pic-icon">
+                                    <i class="bi bi-camera-fill"></i>
+                                </div>
+                            </label>
+                        </div>
+                        <!-- profile nav -->
+                        <div class="nav flex-column nav-pills">
+                            <p class="fw-bold text-center">اسم المستخدم</p>
+                            <p class="text-muted text-center my-3">Name123@gmail.com</p>
+                            <a href="profile.html" class="nav-link active">بياناتي
+                            </a>
+                            <a href="p_changePass.html" class="nav-link">
+                                تغيير كلمة المرور
+                            </a>
+                            <a href="p_membership.html" class="nav-link">
+                                العضوية
+                            </a>
+                            <a href="p_blogs.html" class="nav-link">
+                                مقالاتي
+                            </a>
+                            <a href="p_addBlog.html" class="nav-link">
+                                إضافة مقال
+                            </a>
+                            <a href="" class="text-center logout-link">
+                                <i class="bi bi-power"></i>
+                                تسجيل الخروج
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="profile-data">
+                        <button class="toggle-nav-btn">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <form action="">
+                            <!-- الاسم -->
+                            <div class="form-group mb-3">
+                                <label>الاسم</label>
+                                <div class="position-relative">
+                                    <input class="input-profile-data" type="text">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <!-- البريد الالكتروني -->
+                            <div class="form-group mb-3">
+                                <label>البريد الالكتروني</label>
+                                <div class="position-relative">
+                                    <input class="input-profile-data" type="email">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <!-- رقم الجوال -->
+                            <div class="form-group mb-3">
+                                <label>رقم الجوال</label>
+                                <div class="position-relative">
+                                    <input class="input-profile-data" type="text">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </div>
+                            </div>
+                            <button type="submit" class="custom-btn"><span class="text">ارسال
+                                <i class="bi bi-arrow-left"></i>
+                            </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            <style>
+                .wrapper {
+                    display: flex;
+                    gap: 40px;
+                    justify-content: space-between;
+                }
+            </style>
+        </div>
+    </section>
+
+
+    <!-------------- partners section -------------->
+    <section class="partners">
+        <div class="container">
+            <h5 class="heading m-auto mb-5">
+
+                شركاؤنا</h5>
+            <div class="owl-carousel">
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="partner-wrapper">
+                        <img src="images/partner2.png" alt="">
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!------------- footer section -------------->
+    <section class="send-email">
+        <div class="container">
+            <a href="#" class="scrollUp"><i class="bi bi-arrow-up"></i></a>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-11 col-lg-8 mb-4 mb-lg-0">
+                    <div class="send-data">
+                        <h5 class="mb-3">
+                            القائمة البريدية
+                        </h5>
+                        <p>تواصل معنا ليصلك جديدنا</p>
+                        <input class="form-control" type="text" placeholder="البريد
+                الإلكتروني">
+                        <button>ارسال</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="logo">
+                <img src="images/logo.svg" alt="">
+            </div>
+            <div class="links row gx-5 justify-content-between px-lg-5">
+                <div class="col-12 col-md-auto">
+                    <h5>خريطة الموقع</h5>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html"> من نحن</a></li>
+                        <li><a href="news.html">الأخبار </a></li>
+                        <li><a href="articles.html">المقالات</a></li>
+                        <li><a href="videos.html">الفيديوهات</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h5>روابط هامة</h5>
+                    <ul>
+                        <li><a href="">عمارة البيئة</a></li>
+                        <li><a href="activities.html">البرامج والأنشطة</a></li>
+                        <li><a href="membership.html">العضويات</a></li>
+                        <li><a href="gallery.html">الصور</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <h5>المساعدة</h5>
+                    <ul>
+                        <li><a href="c"> الأسئلة الشائعة</a></li>
+                        <li><a href="conditions.html">الشروط والأحكام</a></li>
+                        <li><a href="policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-auto mb-5">
+                    <h5>معلومات التواصل</h5>
+                    <ul>
+                        <li><a href="mailto:"> البريد الإلكتروني : <span>Mail@mail.com</span></a></li>
+                        <li><a href="">المقر : <span>عنوان المقر يكتب هنا</span></a></li>
+                        <li><a href="tel:">رقم الجوال : <span>+9665478569</span></a></li>
+                    </ul>
+                    <div class="social-media mt-3">
+                        <div class="icon">
+                            <a aria-label="facebook" href="https://www.facebook.com" target="_blank"
+                                class="router-link">
+                            </a>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="icon">
+                            <a aria-label="twitter" href="https://www.twitter.com" target="_blank" class="router-link">
+                            </a>
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="icon">
+                            <a aria-label="linkedin" href="https://maps.app.goo.gl/dXudxxXWfpov8yrN8" target="_blank"
+                                class="router-link">
+                            </a>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <div class="container">
+                <a href="https://smartvision4p.com" target="_blank">
+                    <span>جميع الحقوق محفوظة لـشركة سمارت فيجن للتصميم والبرمجة</span>
+                    <img src="images/smart-logo.png" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!------------- fixed social -------------->
+    <div id="fixed-social">
+        <a href="mailto:user@mail.com" class="icon">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="" class="icon">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="" class="icon">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+    </div>
+
+    <!-- jQuery script -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- owl-carousel script -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- bootstrap script -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- fancyBox script -->
+    <script src="js/jquery.fancybox.min.js"></script>
+    <!-- rateyo script -->
+    <!-- <script src="js/jquery.rateyo.min.js"></script> -->
+
+    <!-- nice select script -->
+    <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
