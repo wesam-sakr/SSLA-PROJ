@@ -3161,6 +3161,34 @@ font-weight: bold;
   background: #ED2;
 }
 
+.project-info li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #8F8F8F;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.same-proj{
+  display: flex;
+  gap: 10px;  
+  position: relative;
+  margin-bottom: .85rem;
+}
+.project-details .adv{
+  min-width: 300px;
+}
+.same-proj img{
+  width: 150px;
+  height: 110px;
+  border-radius: 10px;
+}
+.same-proj h5{
+  font-weight: bold;
+  line-height: 1.6;
+
+}
 
 
 /* ----------------------------- profile page ----------------------===--- */
@@ -3428,6 +3456,10 @@ font-weight: bold;
   .gallery-wrapper .item {
     height: 200px !important;
   }
+  .project-gallery{
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 2rem;
+  }
 }
 
 @media(max-width: 768px){
@@ -3478,6 +3510,9 @@ font-weight: bold;
   .project_header{
     flex-wrap: wrap;
   }
+  .project-gallery{
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width:578px){
   .single-article .options li {
@@ -3495,6 +3530,9 @@ font-weight: bold;
   }
   .single-activity .ssla-form{
     padding: 2rem 1rem;
+  }
+  .project-gallery{
+    grid-template-columns: repeat(2, 1fr);
   }
   
 }
