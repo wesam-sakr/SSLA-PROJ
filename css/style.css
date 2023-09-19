@@ -1065,7 +1065,7 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
   justify-content: center;
   margin-top: 1rem;
 }
-.membership .owl-carousel .owl-dots .owl-dot {
+.membership .owl-carousel .owl-dots .owl-dot{
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -1082,7 +1082,9 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
   margin: 2rem auto 0;
 }
 .membership .owl-prev,
-.membership .owl-next {
+.membership .owl-next,
+.related_projects .owl-prev,
+.related_projects .owl-next{
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1098,13 +1100,16 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
   color: var(--white) !important;
   box-shadow: 0px 0px 25px #00000029;
 }
-.membership .owl-next{
+.membership .owl-next,
+.related_projects .owl-next{
   right: unset;
   left: 10px;
-  transform: translate(50% , -50%);
+  transform: translate(-50% , -50%);
 }
 .membership .owl-prev.disabled,
-.membership .owl-next.disabled{
+.membership .owl-next.disabled,
+.related_projects .owl-prev.disabled,
+.related_projects .owl-next.disabled{
   opacity: .5;
 }
 
@@ -1112,6 +1117,15 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
   background: var(--white);
   color: var(--main-color) !important;
 }
+.membership.activity .owl-dot{
+  background: var(--white) !important;
+  opacity: .6;
+}
+.membership.activity .owl-dot.active{
+  background: var(--white) !important;
+  opacity: 1;
+}
+
 
 
 .sub-gallery .nav-tabs{
@@ -1129,7 +1143,6 @@ header .header-content .owl-carousel .owl-dots .owl-dot.active{
       'item4 item2 item1'
       'item5 item3 item1';
   gap: 22px;
-  padding: 10px;
 }
 .gallery-wrapper .item:nth-child(1) {
   grid-area: item1;
@@ -3055,10 +3068,24 @@ font-weight: bold;
     'item1 item1 item3'
     'item4 item5 item6';
   gap: 22px;
-  padding: 10px;
 }
 .projects .gallery-wrapper:nth-child(6){
   grid-area: item6;
+}
+
+.related_projects .item{
+  text-align: center;
+}
+.proj_img{
+  width: 100%;
+}
+.proj_img img{
+  border-radius: 50%;
+  height: 180px;
+  width: 180px !important;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 .search .form-control {
   padding: 0.75rem 2.4rem;
@@ -3078,6 +3105,61 @@ font-weight: bold;
   right: 15px;
 }
 
+
+.project-gallery{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 16px;
+}
+.project-gallery img{
+  width: 100%;
+  height: 100px;
+  border-radius: 15px;
+}
+
+
+.project-details .carousel {
+  background: #FAFAFA;
+  margin-bottom: 40px;
+}
+
+.project-details .carousel-cell {
+  width: 100%;
+  height: 400px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 8px;
+  overflow: hidden;
+  counter-increment: carousel-cell;
+}
+.project-details .carousel-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.flickity-prev-next-button .flickity-button-icon {
+  width: 45%;
+  height: 40%;
+  left: 28%;
+  top: 32%;
+  color: var(--main-color);
+}
+.flickity-page-dots .dot {
+  background: var(--main-color);
+}
+.project-details .carousel-nav .carousel-cell {
+  height: 80px;
+  width: 100px;
+}
+
+.project-details .carousel-nav .carousel-cell:before {
+  font-size: 50px;
+  line-height: 80px;
+}
+
+.project-details .carousel-nav .carousel-cell.is-nav-selected {
+  background: #ED2;
+}
 
 
 
@@ -3334,7 +3416,6 @@ font-weight: bold;
     'item3 item4'
     'item5 item6';
     gap: 22px;
-    padding: 10px;
   }
   .sign-form {
     width: 90% !important;
@@ -3349,7 +3430,7 @@ font-weight: bold;
   }
 }
 
-@media(max-width: 786px){
+@media(max-width: 768px){
   .wrapper{
     display: block !important;
   }
@@ -3367,6 +3448,10 @@ font-weight: bold;
   }
   .single-activity .applay{
     flex-direction: column;
+  }
+  .proj_img img{
+    height: 140px;
+    width: 140px !important;
   }
 
   .membership_topics{
@@ -3403,7 +3488,6 @@ font-weight: bold;
     grid-template-columns: unset ;
     grid-template-areas: unset;
     gap: 22px;
-    padding: 10px;
   }
   .gallery-wrapper .item {
     height: 230px !important;
